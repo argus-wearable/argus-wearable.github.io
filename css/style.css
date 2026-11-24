@@ -121,9 +121,26 @@ h1 {
   line-height: 0.98;
 }
 
+.authors {
+  margin: 16px 0 0;
+  max-width: 40rem;
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.authors sup { font-size: 0.7em; }
+
+.affiliation {
+  margin: 4px 0 0;
+  max-width: 40rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .dek {
-  margin: 18px 0 0;
-  max-width: 38rem;
+  margin: 14px 0 0;
+  max-width: 40rem;
   color: #3c434c;
   font-size: 1.28rem;
   line-height: 1.4;
@@ -246,6 +263,21 @@ p { margin: 0; }
 
 .prose p + p { margin-top: 0.9em; }
 
+.prose ul {
+  margin: 0.7em 0 0;
+  padding-left: 1.15em;
+  max-width: 40.5rem;
+}
+
+.prose li + li { margin-top: 0.2em; }
+
+.eq {
+  display: block;
+  margin: 0.45em 0;
+  overflow-x: auto;
+}
+
+
 .prose.follow { margin-top: 22px; }
 
 .prose a { text-underline-offset: 3px; }
@@ -338,15 +370,14 @@ figcaption {
 
 .frame {
   position: relative;
-  aspect-ratio: 1130 / 554;
-  background: #fff;
+  aspect-ratio: 7 / 3;
+  background: #121614;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--line);
 }
 
 .frame.is-ready {
-  aspect-ratio: 16 / 9;
   background: #121614;
 }
 
@@ -456,6 +487,46 @@ footer strong {
 
 footer a { text-decoration: none; }
 footer a:hover { text-decoration: underline; }
+
+.table-wrap { margin: 28px 0 8px; overflow-x: auto; }
+
+table.results {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+table.results th,
+table.results td {
+  padding: 7px 8px;
+  text-align: right;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+table.results th:first-child,
+table.results td:first-child,
+table.results th:nth-child(2),
+table.results td:nth-child(2) { text-align: left; }
+
+table.results thead th {
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+table.results caption {
+  caption-side: bottom;
+  margin-top: 10px;
+  text-align: left;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  white-space: normal;
+  max-width: 46rem;
+}
 
 @media (max-width: 860px) {
   .stats,
