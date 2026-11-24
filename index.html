@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Argus</title>
+  <title>Argus: Toward Low-Drift Human Motion Tracking with Visual-Inertial Odometry Modules</title>
   <meta name="description" content="Argus, an open-source wearable for prototyping visual-inertial human motion tracking algorithms.">
-  <meta property="og:title" content="Argus: Toward Low-Drift Human Motion Estimation with Visual-Inertial Odometry Modules">
+  <meta property="og:title" content="Argus: Toward Low-Drift Human Motion Tracking with Visual-Inertial Odometry Modules">
   <meta property="og:description" content="Out-of-lab joint estimation systems primarily rely on IMUs, posing a significant challenge for long-term motion tracking due to drift.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://argus-wearable.github.io/">
@@ -37,10 +37,9 @@
   <main id="content">
     <section class="hero" id="top">
       <div class="wrap">
-        <h1>Argus</h1>
+        <h1>Argus: Toward Low-Drift Human Motion Tracking with Visual-Inertial Odometry Modules</h1>
         <p class="authors">Max Burns<sup>*</sup>, Maisha Khanum<sup>*</sup>, Ethan T. Le, Lilian A. Olukutukei, Yuhao Huai, Steven H. Collins, and Monroe Kennedy III</p>
         <p class="affiliation">Department of Mechanical Engineering, Stanford University, Stanford CA, USA. <sup>*</sup>Both authors contributed equally to this work.</p>
-        <p class="dek">Toward Low-Drift Human Motion Estimation with Visual-Inertial Odometry Modules</p>
         <p class="lede">Out-of-lab joint estimation systems primarily rely on IMUs, posing a significant challenge for long-term motion tracking due to drift. To explore this challenge we present Argus, an open-source wearable for prototyping visual-inertial human motion tracking algorithms.</p>
         <!--
           Two links to replace when the preprint and the PDF are ready:
@@ -75,8 +74,8 @@
             <dd>degrees per minute, compared to 1.49 and 3.06 degrees per minute in IMU-only systems.</dd>
           </div>
           <div>
-            <dt class="b">9 of 11</dt>
-            <dd>tested upper limb range of motion exercises.</dd>
+            <dt class="b">9/10</dt>
+            <dd>studied range of motion exercises with significant error reduction.</dd>
           </div>
         </dl>
       </div>
@@ -86,7 +85,7 @@
       <div class="wrap">
         <div class="prose">
           <h2>Overview</h2>
-          <p>Each Argus module is composed of a Raspberry Pi, battery, camera, and IMU, and can run local visual-inertial odometry (VIO) to estimate pose in real-time. An OpenSim inverse kinematics model is used to convert estimated bone poses to biological joint angles at 50hz. We demonstrate the performance of our pipeline with an augmented, off-the-shelf VIO algorithm and camera-based intermittent drift correction through feature matching. In a validation study using optical motion capture, we demonstrate an average angular RMSE of 0.88 degrees with drift rate of 0.19 degrees per minute in single-module tracking using a robot arm. In our initial biomechanical validation, we observed significant error reduction across nine of eleven tested upper limb range of motion exercises due to the ability to recover from poor orientation estimates using visual information. In a lower-limb drift study, we observed an insignificant drift of 0.20 degrees per minute, compared to 1.49 and 3.06 degrees per minute in IMU-only systems. These findings support the use of body-mounted cameras to significantly reduce pose tracking error in human motion tracking in the real world, and offer a platform for continued development of visual-inertial human motion tracking.</p>
+          <p>Each Argus module is composed of a Raspberry Pi, battery, camera, and IMU, and can run local visual-inertial odometry (VIO) to estimate pose in real-time. An OpenSim inverse kinematics model is used to convert estimated bone poses to biological joint angles at 50hz. We demonstrate the performance of our pipeline with an augmented, off-the-shelf VIO algorithm and camera-based intermittent drift correction through feature matching. In a validation study using optical motion capture, we demonstrate an average angular RMSE of 0.88 degrees with drift rate of 0.19 degrees per minute in single-module tracking using a robot arm. In our initial biomechanical validation, we observed significant error reduction across nine of ten studied range of motion exercises due to the ability to recover from poor orientation estimates using visual information. In a lower-limb drift study, we observed an insignificant drift of 0.20 degrees per minute, compared to 1.49 and 3.06 degrees per minute in IMU-only systems. These findings support the use of body-mounted cameras to significantly reduce pose tracking error in human motion tracking in the real world, and offer a platform for continued development of visual-inertial human motion tracking.</p>
           <p>In this work, we propose methods for reducing drift in human pose tracking with body-mounted cameras, and present results from an initial validation study. Our contributions include:</p>
         </div>
         <ol class="contrib">
