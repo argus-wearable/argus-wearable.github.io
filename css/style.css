@@ -369,42 +369,31 @@ figcaption {
   color: var(--muted);
 }
 
-.frame {
+.clips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 18px;
+  margin-top: 28px;
+}
+
+.clips figure { margin: 0; }
+
+.clip {
   position: relative;
-  aspect-ratio: 7 / 3;
+  aspect-ratio: 16 / 9;
   background: #121614;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--line);
 }
 
-.frame.is-ready {
-  background: #121614;
-}
-
-.frame img,
-.frame video {
+.clip iframe {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  background: #121614;
+  border: 0;
 }
-
-.frame img { background: #fff; }
-
-.frame video {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.frame.is-ready video {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.frame.is-ready img { visibility: hidden; }
 
 .file-list {
   display: flex;
@@ -530,6 +519,8 @@ table.results caption {
 }
 
 @media (max-width: 860px) {
+  .clips { grid-template-columns: 1fr; }
+
   .stats,
   .pair,
   .specs { grid-template-columns: 1fr 1fr; }
